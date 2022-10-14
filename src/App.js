@@ -2,6 +2,7 @@ import {Route, Routes} from "react-router-dom";
 import {Main} from "./components/pages/main";
 import {Second} from "./components/pages/second";
 import {useEffect, useState} from "react";
+import {Test} from "./components/test";
 
 function App() {
 
@@ -42,6 +43,7 @@ function App() {
           <Routes>
               <Route path='/' element={<Main content={content} request={request} />} />
               <Route path='/:id' element={<Second content={content} />} />
+              <Route path='/test' element={<Test />} />
           </Routes>
         </>
       );
